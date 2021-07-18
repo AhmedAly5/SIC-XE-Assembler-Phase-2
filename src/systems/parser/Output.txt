@@ -1,0 +1,29 @@
+			Name	Address
+
+			prog	0
+
+			ALPHA	502
+
+			BETA	505
+
+			GAMMA	508
+
+			bb	50b
+
+
+Line no.	Address		Label		Op-Code		Operands	Comments
+1		0		prog		START		0		
+2		0		      		+LDA		100		
+3		0		      		org		100		
+4		100		      		LDX		#205		
+5		103		      		+STA		@15		
+6		103		      		rmo		a,s		
+7		105		      		org		500		
+8		500		      		rmo		a,x		
+9		502		ALPHA		RESW		1		
+10		505		BETA		WORD		16		
+11		508		GAMMA		WORD		4		
+12		50b		bb		word		3		
+13		50e		      		END		prog		
+
+		*********The Code is Assembled Correctly**************
